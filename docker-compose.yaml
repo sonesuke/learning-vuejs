@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  vuejs:
+    build:
+      context: ./
+    working_dir: /app
+    volumes:
+      - ./src:/app
+    ports:
+      - 80:8080
+    command
